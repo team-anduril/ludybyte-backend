@@ -125,7 +125,7 @@ const server = http.createServer((req, res) =>
 });
 
 
-server.listen(process.env.port, () => 
+server.listen(process.env.port || 3000, () => 
 {
 	console.log(`Server running at http://${hostname}/`)
 })
