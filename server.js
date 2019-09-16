@@ -148,10 +148,8 @@ const server = http.createServer((req, res) =>
 					<code>fetch("localhost:3000/login?email=ab@cd.com&password=123abc")</code>   <br /><br /> 
 					AND <br /><br />
 					<code>fetch("localhost:3000/signup?name=Johnson&email=ab@cd.com&password=123abc")</code>
-
-					<br /><br /><br />
+					<br /><br /><br />All responses will be in JSON format<br />
 					Responses for succesful login or signup will be in this format: <br /><br />
-	
 					<code>{<br />
 							data: <br /> 
 							{ <br />
@@ -160,7 +158,6 @@ const server = http.createServer((req, res) =>
 								"password": "abc123" <br />
 							} <br />
 					</code> } <br />
-
 					<br /><br /><br />
 					Response after unsuccessful operations will be in this format: <br /><br />
 					<code>{<br />
