@@ -1,0 +1,19 @@
+{
+  "name": "LudyByte",
+  "version": "1.0.0",
+  "description": "Node API",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "LudyByte",
+    "heroku"
+  ],
+  "author": "jaycodist@gmail.com",
+  "engines": {
+    "node": "10.x"
+  },
+  "license": "MIT"
+}
