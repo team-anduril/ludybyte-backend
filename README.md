@@ -1,6 +1,8 @@
-##This to the NodeJS API (without frameworks) for anduril web app
+##This to the NodeJS API (without frameworks or external dependencies) for anduril web app
 
 Only login and signup operations are allowed at the moment.
+# To get started run `node express.js` or `npm start` in project directory
+
 Requests for login and signup, respectively are expected to be in the form: 
 
 #fetch("localhost:3000/login?email=ab@cd.com&password=123abc")

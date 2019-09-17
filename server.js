@@ -1,5 +1,5 @@
 ///
-/// NodeJS API without frameworks for anduril web app
+/// NodeJS API without frameworks or external dependencies for anduril web app
 /// Requests for login and signup, respectively are expected to be in the form: 
 /// 	fetch("localhost:3000/login?email=ab@cd.com&password=123abc")   AND
 ///		fetch("localhost:3000/signup?name=Johnson&email=ab@cd.com&password=123abc")
@@ -15,6 +15,7 @@ const  hostname = "localhost/";
 const port = process.env.PORT || 3000; // 3000 for localhost process.env.PORT for heroku hosting
 const usersPath = "./users.json";
 const APP_SECRET = "Not you business, no?"; // Used as part of the hash generation: Security measure
+
 let users = [];				// Booted from users.json file at start
 let loggedInUser;
 
@@ -48,7 +49,7 @@ fs.readFile(usersPath, (err, content) =>
     }
 });
 
-// Handle login, providing for cases like emails that have not 
+// Handle login, providing for issues like emails that have not 
 // been signed up and incorrect passwords. Receives email and password
 const login = (res, urlQueryObj) => 
 {
@@ -79,7 +80,7 @@ const login = (res, urlQueryObj) =>
 	res.end(JSON.stringify(users.find(a => a.email === urlQueryObj.email)));
 }
 
-// Handle signup providing for cases like already used emails
+// Handle signup, providing for issues like already used emails
 // Receives email, name and password
 const signup = (res, urlQueryObj) => 
 {
@@ -140,10 +141,11 @@ const server = http.createServer((req, res) =>
 		res.end(`
 			<div style="text-align: center; font-family: 'segoe UI', sans-serif; background: lightgray; min-height: 100vh">
 				<h1>Hello!</h1>
-				<h3>Welcome to the NodeJS API (without frameworks) for anduril web app </h3>
+				<h3>Welcome to the NodeJS API (without frameworks or external dependencies) for anduril web app </h3>
 				<br />
-				<p style="display: block; font-size: 18px; margin: auto; width: 60vw; text-align: left;"> 
+				<p style="display: block; font-size: 18px; margin: auto; width: 60vw; text-align: left;">  
 					Only login and signup operations are allowed at the moment. <br /><br />
+					To get started run 'node express.js' or 'npm start' in project directory <br /><br />
 					Requests for login and signup, respectively are expected to be in the form: <br /><br /><br />
 					<code>fetch("localhost:3000/login?email=ab@cd.com&password=123abc")</code>   <br /><br /> 
 					AND <br /><br />
