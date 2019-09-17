@@ -12,11 +12,14 @@ AND
 fetch("localhost:3000/signup?name=Johnson&email=ab@cd.com&password=123abc")
 
 All responses will be in JSON format
+
 Responses for succesful login or signup will be in this format:
 
 {
+
 	data:
 		{
+		
 			"name": "Johnson",
 			"email": "abc.xyz.com",
 			"password": "abc123"
