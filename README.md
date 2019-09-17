@@ -16,7 +16,6 @@ All responses will be in JSON format
 Responses for succesful login or signup will be in this format:
 
 {
-
 	data:
 		{
 		
@@ -24,13 +23,15 @@ Responses for succesful login or signup will be in this format:
 			"email": "abc.xyz.com",
 			"password": "abc123"
 		}
-} 
+}
 
 Response after unsuccessful operations will be in this format:
 
 {
 	data:
+	
 		{
+		
 			"code": NUMBER,
 		}
 }
