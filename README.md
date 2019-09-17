@@ -5,11 +5,11 @@ Only login and signup operations are allowed at the moment.
 
 Requests for login and signup, respectively are expected to be in the form: 
 
-#fetch("localhost:3000/login?email=ab@cd.com&password=123abc")
+fetch("localhost:3000/login?email=ab@cd.com&password=123abc")
 
 AND
 
-#fetch("localhost:3000/signup?name=Johnson&email=ab@cd.com&password=123abc")
+fetch("localhost:3000/signup?name=Johnson&email=ab@cd.com&password=123abc")
 
 All responses will be in JSON format
 Responses for succesful login or signup will be in this format:
