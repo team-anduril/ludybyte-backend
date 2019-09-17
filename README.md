@@ -33,15 +33,15 @@ Response after unsuccessful operations will be in this format:
 }
 
 
-Where NUMBER could be aby of the following:
+Where NUMBER could be any of the following:
 
     400 - Querystring data needed for signup/login not supplied
 
-    496 - Email used for login does not exist in databse
+    496 - Email used for login does not exist in database
 
     419 - Wrong password used for login
 
-    427 - Email used for signup already is signed up 
+    427 - Email used for signup, is already signed up 
 
 
 
