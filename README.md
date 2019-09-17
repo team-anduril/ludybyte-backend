@@ -1,4 +1,4 @@
-##This to the NodeJS API (without frameworks or external dependencies) for anduril web app
+##This is the NodeJS API (without frameworks or external dependencies) for anduril web app
 
 Only login and signup operations are allowed at the moment.
 # To get started run `node express.js` or `npm start` in project directory
